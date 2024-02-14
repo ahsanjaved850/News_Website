@@ -1,0 +1,58 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  overflow: hidden;
+}
+.one {
+  background: url("1.jpg");
+  flex: 2;
+  color: white;
+  height: 100vh;
+  background-size: cover;
+}
+.two {
+  background: url("2.jpeg");
+  flex: 2;
+  color: white;
+  height: 100vh;
+  background-size: cover;
+}
+.three {
+  background: url("3.jpeg");
+  flex: 3 3 auto;
+  color: white;
+  height: 100vh;
+  background-size: cover;
+}
+.four {
+  background: url("4.jpg");
+  flex: 2;
+  color: white;
+  height: 100vh;
+  background-size: cover;
+}
+.five {
+  background: url("5.jpeg");
+  flex: 2;
+  color: white;
+  height: 100vh;
+  background-size: cover;
+}
+.one,
+.two,
+.three,
+.four,
+.five {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
