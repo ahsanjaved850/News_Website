@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: steelblue;
+  background-image: linear-gradient(
+    to bottom left,
+    steelblue,
+    steelblue,
+    steelblue,
+    white
+  );
+}
+.bar {
+  display: flex;
+  flex: 1;
+}
+.buttoned {
+  display: flex;
+  flex: 1;
+  background-color: rgb(30, 109, 173);
+  color: white;
+  padding: 0.7rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-color: rgba(53, 117, 169, 0.3);
+}
+input {
+  flex: 1;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dial {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 40%;
+  color: white;
+  font-size: 120px;
+  margin-bottom: 0px;
+  margin-top: 180px;
+}
+.remain {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 40%;
+  color: white;
+  font-size: 25px;
+}
