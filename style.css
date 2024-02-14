@@ -1,0 +1,565 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+nav {
+  position: fixed;
+  height: 72px;
+  width: 100%;
+  z-index: 3;
+  background: white;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  margin-left: 210px;
+  margin-right: 210px;
+}
+.logo {
+  width: 180px;
+  height: 42px;
+}
+.social {
+  margin-left: 450px;
+}
+button {
+  font-size: 20px;
+  border: 0;
+  background: white;
+}
+button.home {
+  margin-left: auto;
+}
+button .home {
+  text-decoration: none;
+  color: black;
+}
+button .about {
+  text-decoration: none;
+  color: #333333;
+}
+.fa {
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+.fa-youtube {
+  background: white;
+  color: grey;
+}
+
+.fa-instagram {
+  background: white;
+  color: grey;
+}
+.fa-facebook {
+  background: gray;
+  color: white;
+  padding-top: 4px;
+}
+
+.fa-twitter {
+  background: white;
+  color: gray;
+}
+
+.front-page {
+  background-image: url("featured.jpg");
+  background-size: cover;
+  height: 450px;
+  padding: 32px;
+}
+.front-page::before {
+  content: "";
+  position: absolute;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 32px;
+  width: 518px;
+  margin-left: 170px;
+  margin-right: 210px;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+.container2 h4,
+.container2 h2,
+.container2 p {
+  margin: 5px;
+  z-index: 2;
+}
+.container2 h4 {
+  font-size: 8px;
+  background: #f99500;
+  border: 5px;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 0;
+}
+.container2 p {
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 5px;
+}
+.container2 button {
+  margin-top: 10px;
+  background: rgb(191, 6, 6);
+  color: white;
+  font-size: 15px;
+  padding: 13px;
+  z-index: 2;
+  cursor: pointer;
+}
+button .read-more {
+  text-decoration: none;
+  color: white;
+}
+.container2 button:hover {
+  background: rgb(163, 4, 4);
+}
+.container2 h2 {
+  margin-top: 10px;
+}
+.main-container {
+  width: 100%;
+  height: 1050px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #f3f3f3;
+}
+.main-container h2 {
+  margin-left: 210px;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin-left: 210px;
+  margin-right: 210px;
+}
+.heading {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.sport .heading {
+  color: white;
+}
+.enter {
+  height: 250px;
+  padding: 16px;
+}
+.enter1 {
+  background: white;
+}
+.enter2 {
+  background: white;
+  padding: 16px;
+}
+.enter-2 h5 {
+  margin-bottom: 0;
+  margin-top: 50px;
+  font-size: 8px;
+  background: #a66bbe;
+  color: white;
+  border: 3px;
+  border-radius: 15px;
+  padding: 10px;
+  width: fit-content;
+}
+.enter-2 h4 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.sport {
+  background: #515151;
+  background-size: cover;
+  color: white;
+  padding: 16px;
+}
+.sport h5 {
+  margin-bottom: 0;
+  margin-top: 20px;
+  font-size: 8px;
+  background: #f99500;
+  color: white;
+  border: 3px;
+  border-radius: 15px;
+  padding: 10px;
+  width: fit-content;
+}
+.sport h4 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.tech {
+  background: white;
+  padding: 16px;
+}
+.tech h5 {
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 8px;
+  background: #a66bbe;
+  color: white;
+  border: 3px;
+  border-radius: 15px;
+  padding: 10px;
+  width: fit-content;
+}
+.tech h4 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.sports2 {
+  background: white;
+  padding: 16px;
+}
+.sports2 h5 {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 8px;
+  background: #f99500;
+  color: white;
+  border: 3px;
+  border-radius: 15px;
+  padding: 10px;
+  width: fit-content;
+}
+.sports2 h4 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.tech2 {
+  background: white;
+  padding: 16px;
+}
+.tech2 h5 {
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 8px;
+  background: #a66bbe;
+  color: white;
+  border: 3px;
+  border-radius: 15px;
+  padding: 10px;
+  width: fit-content;
+}
+.tech2 h4 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.sports3 {
+  background: #c72727;
+  padding: 16px;
+  color: white;
+  font-size: 17px;
+}
+.sports3 h5 {
+  margin-bottom: 0;
+  margin-top: 20px;
+  font-size: 8px;
+  background: #f99500;
+  color: white;
+  border: 3px;
+  border-radius: 15px;
+  padding: 10px;
+  width: fit-content;
+}
+.sports3 h4 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.enter3 {
+  background: white;
+  padding: 16px;
+}
+.enter3 h5 {
+  margin-bottom: 0;
+  margin-top: 30px;
+  font-size: 8px;
+  background: #a66bbe;
+  color: white;
+  border: 3px;
+  border-radius: 15px;
+  padding: 10px;
+  width: fit-content;
+}
+.enter3 h4 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.enter3-p {
+  background: white;
+}
+.foot-container {
+  height: 290px;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #333333;
+}
+.contained {
+  display: flex;
+  margin-left: 210px;
+  margin-right: 210px;
+}
+.intro {
+  color: white;
+  width: 241px;
+  height: 197px;
+}
+.email {
+  color: white;
+  width: 241px;
+  height: 197px;
+  margin-left: 50px;
+}
+.email h4 {
+  margin-top: 0;
+}
+.email p {
+  margin-bottom: 8px;
+}
+.email input {
+  width: 220px;
+  line-height: 1.5;
+  padding: 0.5rem;
+  margin-top: 0px;
+}
+.email button {
+  background: #c72727;
+  color: white;
+  width: 220px;
+  text-align: center;
+  padding: 0.3rem;
+  margin-top: 7px;
+  font-size: 15px;
+}
+.links {
+  margin-top: 0px;
+  color: white;
+  width: 241px;
+  height: 197px;
+  margin-left: 50px;
+}
+.links h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.links ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+.links ul li {
+  line-height: 2;
+  padding: 0.1rem;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(15, 14, 14);
+}
+.links ul li:hover {
+  color: #c72727;
+  cursor: pointer;
+}
+.join {
+  margin-top: 0px;
+  width: 241px;
+  height: 197px;
+  color: white;
+  margin-left: 50px;
+}
+.join h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.join button {
+  background: #f99500;
+  color: white;
+  padding: 0.8rem;
+  font-size: 15px;
+  cursor: pointer;
+}
+.copy-right {
+  height: 40px;
+  width: 100%;
+  background: #565353;
+  color: white;
+  text-align: center;
+  padding: 0.1rem;
+  width: 1100px;
+  margin-left: 210px;
+  font-size: 12px;
+}
+.header-about {
+  height: 72px;
+}
+.about-container {
+  display: flex;
+  width: 100%;
+  height: 1150px;
+  background: #f3f3f3;
+  top: 72px;
+  padding: 32px;
+}
+.art {
+  height: 1080px;
+  width: 725px;
+  padding: 16px;
+  background: white;
+  margin-left: 210px;
+}
+.text-article h1 {
+  font-size: 25px;
+  font-weight: 100;
+}
+.texted p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.referen {
+  background: #acacac;
+  background-size: cover;
+  color: white;
+  padding: 0.7rem;
+}
+
+.category {
+  background: white;
+  width: 290px;
+  height: 275px;
+  margin-left: 20px;
+  padding: 16px;
+}
+.category h2 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.category ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2;
+  font-size: 18px;
+}
+.category ul li {
+  border-bottom: 1px dotted rgb(15, 14, 14);
+  padding: 0.1rem;
+}
+.category ul li:hover {
+  color: #c72727;
+  cursor: pointer;
+}
+.club {
+  position: relative;
+  width: 290px;
+  height: 170px;
+  background: #f99500;
+  color: white;
+  padding: 16px;
+  top: 300px;
+  right: 252px;
+}
+.club h4 {
+  margin: 0;
+  font-size: 18px;
+}
+.club p {
+  margin-bottom: 10px;
+}
+.club button {
+  background: #333333;
+  color: white;
+  width: 100%;
+  font-size: 13px;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+.boxed {
+  height: 615px;
+  width: 100%;
+  background: #f3f3f3;
+}
+.panel {
+  display: flex;
+  margin-left: 210px;
+  margin-right: 210px;
+  padding: 32px;
+}
+.card {
+  width: 720px;
+  height: 510px;
+  background: white;
+  padding: 16px;
+}
+.card h1 {
+  margin: 0;
+  font-size: 30px;
+}
+.card p {
+  font-size: 18px;
+  line-height: 1.1;
+}
+.clubbed {
+  width: 290px;
+  height: 170px;
+  background: #c72727;
+  color: white;
+  padding: 16px;
+  margin-left: 20px;
+}
+.clubbed h4 {
+  margin: 0;
+  font-size: 18px;
+}
+.clubbed button {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 14px;
+}
+.sports3 .heading {
+  color: white;
+}
+.home,
+.about {
+  height: inherit;
+  width: inherit;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.active {
+  background: rgb(191, 6, 6);
+  color: rgb(255, 255, 255);
+}
