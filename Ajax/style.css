@@ -1,0 +1,44 @@
+html {
+  background: #ffc600;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+input {
+  width: 100%;
+  padding: 20px;
+}
+.box {
+  width: 400px;
+  margin: 50px auto;
+}
+.search {
+  margin: 0;
+  text-align: center;
+  outline: 0;
+  border: 10px solid #f7f7f7;
+  width: 120%;
+  left: -10%;
+  position: relative;
+  top: 10px;
+  z-index: 2;
+  border-radius: 5px;
+  font-size: 30px;
+}
+.suggestion {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.suggest li {
+  background: white;
+  list-style: none;
+  border-bottom: 1px solid #d8d8d8;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.hl {
+  background-color: #ffc600;
+}
